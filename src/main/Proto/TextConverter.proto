@@ -1,0 +1,253 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "via.pro3.grpcspringbootexample.grpc";
+option java_outer_classname = "DanishCrownServiceProto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+// TextConverter service definition
+service TextConverter {
+  rpc toUpper(RequestText) returns(ResponseText);
+  rpc capitalizeFirstCharacter(RequestText) returns(ResponseText);
+}
+message RequestText {
+  string input_text = 1;
+}
+
+message ResponseText {
+  string output_text = 1;
+}
+
+service TrackingService {
+  //assignment 2 functions
+  rpc getProductsFromAnimal(Animal) returns (AniProRegistrationList) {};
+  rpc getAnimalFromProduct(Product) returns (AniProRegistrationList) {};
+}
+
+message Farm{
+  int64 id=1;
+  string FarmName=2;
+  string Adress=3;
+  string City=4;
+  string Province=5;
+  string RegNr=6;
+  string Telephone=7;
+  string OwnerFirstName=8;
+  string OwnerLastName=9;
+}
+
+message FarmList{
+  repeated Farm farms = 1;
+}
+
+service FarmService {
+  rpc create(Farm) returns (Farm) {};
+  rpc update(Farm) returns (Farm) {};
+  rpc findById(google.protobuf.Int64Value) returns (Farm) {};
+  rpc list(google.protobuf.Empty) returns (FarmList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+
+}
+
+message Animal {
+  int32 id = 1; // DC_ID
+  int32 reg_nr = 2; // DC_ID
+  string name = 3; // DC_Name
+  string species = 4; // Species
+  string sub_species = 5; // DC_Name
+  string birthday = 6; // DATE (kan også være en Timestamp)
+  float weight = 7; // Weight
+  int32 farm_reg_nr = 8; // DC_ID
+}
+
+message AnimalList{
+  repeated Animal animals = 1;
+  google.protobuf.Int64Value resultCount = 2;
+}
+
+service AnimalService {
+  rpc create(Animal) returns (Animal) {};
+  rpc update(Animal) returns (Animal) {};
+  rpc findById(google.protobuf.Int64Value) returns (Animal) {};
+  rpc list(google.protobuf.Empty) returns (AnimalList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+
+}
+
+message AniProRegistration {
+  int32 id = 1; // DC_ID
+  int32 reg_nr = 2; // DC_ID
+  string production_date = 3; // DATE (kan også være en Timestamp)
+  float weight = 4; // Weight
+  int32 animal_reg_nr = 5; // DC_ID
+  int32 product_reg_nr = 6; // DC_ID
+}
+
+message AniProRegistrationList {
+  repeated AniProRegistration result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service AniProRegistrationService {
+  rpc create(AniProRegistration) returns (AniProRegistration) {};
+  rpc update(AniProRegistration) returns (AniProRegistration) {};
+  rpc findById(google.protobuf.Int64Value) returns (AniProRegistration) {};
+  rpc list(google.protobuf.Empty) returns (AniProRegistrationList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
+
+
+message Product {
+  int32 id = 1; // DC_ID
+  int32 reg_nr = 2; // DC_ID
+  string name = 3; // DC_Name
+  string species = 4; // Species
+}
+
+message ProductList {
+  repeated Product result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service ProductService {
+  rpc create(Product) returns (Product) {};
+  rpc update(Product) returns (Product) {};
+  rpc findById(google.protobuf.Int64Value) returns (Product) {};
+  rpc list(google.protobuf.Empty) returns (ProductList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
+
+
+message ProTrayRegistration {
+  int32 id = 1; // DC_ID
+  float weight = 2; // Weight
+  string production_date = 3; // DATE (kan også være en Timestamp)
+  int32 ani_pro_reg_nr = 4; // DC_ID
+  int32 tray_reg_nr = 5; // DC_ID
+}
+
+message ProTrayRegistrationList {
+  repeated ProTrayRegistration result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service ProTrayRegistrationService {
+  rpc create(ProTrayRegistration) returns (ProTrayRegistration) {};
+  rpc update(ProTrayRegistration) returns (ProTrayRegistration) {};
+  rpc findById(google.protobuf.Int64Value) returns (ProTrayRegistration) {};
+  rpc list(google.protobuf.Empty) returns (ProTrayRegistrationList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
+
+
+message Tray {
+  int32 id = 1; // DC_ID
+  int32 reg_nr = 2; // DC_ID
+  string size = 3; // Name
+  string date = 4; // DATE (kan også være en Timestamp)
+}
+
+message TrayList {
+  repeated Tray result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service TrayService {
+  rpc create(Tray) returns (Tray) {};
+  rpc update(Tray) returns (Tray) {};
+  rpc findById(google.protobuf.Int64Value) returns (Tray) {};
+  rpc list(google.protobuf.Empty) returns (TrayList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
+
+
+message TrayStaRegistration {
+  int32 id = 1; // DC_ID
+  float weight = 2; // Weight
+  string production_date = 3; // DATE (kan også være en Timestamp)
+  int32 tray_reg_nr = 4; // DC_ID
+  int32 station_reg_nr = 5; // DC_ID
+}
+
+message TrayStaRegistrationList {
+  repeated TrayStaRegistration result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service TrayStaRegistrationService {
+  rpc create(TrayStaRegistration) returns (TrayStaRegistration) {};
+  rpc update(TrayStaRegistration) returns (TrayStaRegistration) {};
+  rpc findById(google.protobuf.Int64Value) returns (TrayStaRegistration) {};
+  rpc list(google.protobuf.Empty) returns (TrayStaRegistrationList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
+
+
+message Station {
+  int32 id = 1; // DC_ID
+  int32 reg_nr = 2; // DC_ID
+  string station_name = 3; // DC_Name
+  string type = 4; // DC_Name
+  string install_date = 5; // DATE (kan også være en Timestamp)
+  string service_date = 6; // DATE (kan også være en Timestamp)
+}
+
+message StationList {
+  repeated Station result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service StationService {
+  rpc create(Station) returns (Station) {};
+  rpc update(Station) returns (Station) {};
+  rpc findById(google.protobuf.Int64Value) returns (Station) {};
+  rpc list(google.protobuf.Empty) returns (StationList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
+
+
+message Package {
+  int32 id = 1; // DC_ID
+  int32 batch_nr = 2; // DC_ID
+  string name = 3; // DC_Name
+  string description = 4; // Description
+  float weight = 5; // Weight
+  string production_date = 6; // DATE (kan også være en Timestamp)
+  string expiration_date = 7; // DATE (kan også være en Timestamp)
+  int32 product_nr = 8; // DC_ID
+}
+
+message PackageList {
+  repeated Package result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service PackageService {
+  rpc create(Package) returns (Package) {};
+  rpc update(Package) returns (Package) {};
+  rpc findById(google.protobuf.Int64Value) returns (Package) {};
+  rpc list(google.protobuf.Empty) returns (PackageList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
+
+
+message Store {
+  int32 id = 1; // DC_ID
+  int32 reg_nr = 2; // DC_ID
+  string name = 3; // DC_Name
+  string type = 4; // DC_Name
+}
+
+message StoreList {
+  repeated Store result_list = 1;
+  google.protobuf.Int64Value result_count = 2;
+}
+
+service StoreService {
+  rpc create(Store) returns (Store) {};
+  rpc update(Store) returns (Store) {};
+  rpc findById(google.protobuf.Int64Value) returns (Store) {};
+  rpc list(google.protobuf.Empty) returns (StoreList) {};
+  rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
+}
