@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class DatabaseConnection {
-    private static final String URL ="jdbc:postgresql://localhost:5433/postgres?currentSchema=DanishCrownDB";
+    private static final String URL ="jdbc:postgresql://localhost:5433/DanishCrownDB";
     private static final String USER = "postgres";
     private static final String PASSWORD = "thomas123456";
 

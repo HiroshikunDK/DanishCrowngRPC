@@ -4,20 +4,26 @@ import com.google.protobuf.BoolValue;
 import com.google.protobuf.Empty;
 import com.google.protobuf.Int64Value;
 import io.grpc.stub.StreamObserver;
+import org.example.data.DatabaseConnectionLite;
 import via.pro3.grpcspringbootexample.grpc.*;
 import org.example.data.DatabaseConnection;
 
 import java.sql.*;
 public class TrackingService extends TrackingServiceGrpc.TrackingServiceImplBase {
     private static final String DB_URL = "jdbc:postgresql://localhost:5433/postgres?currentSchema=DanishCrownDB";
-    DatabaseConnection dbconn = new DatabaseConnection();
+
+    //Why wont postgres just work...
+    //DatabaseConnection dbconn = new DatabaseConnection();
+
+    //SQLite database
+    DatabaseConnectionLite dbconn = new DatabaseConnectionLite();
 
     @Override
     public void getProductsFromAnimal(Animal request, StreamObserver<AniProRegistrationList> responseObserver) {
         AniProRegistrationList.Builder responseBuilder = AniProRegistrationList.newBuilder();
 
         try (Connection conn = dbconn.getConnection();
-             PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM \"AniProRegistration\" WHERE AnimalRegNr = ?")) {
+             PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM \"aniproregistration\" WHERE animalregnr = ?")) {
 
             pstmt.setInt(1, request.getRegNr());  // Assuming reg_nr is used to link animals to registrations
 
@@ -45,7 +51,7 @@ public class TrackingService extends TrackingServiceGrpc.TrackingServiceImplBase
         AniProRegistrationList.Builder responseBuilder = AniProRegistrationList.newBuilder();
 
         try (Connection conn = dbconn.getConnection();
-             PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM \"AniProRegistration\" WHERE ProductRegNr = ?")) {
+             PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM \"aniproregistration\" WHERE ProductRegNr = ?")) {
 
             pstmt.setInt(1, request.getRegNr());  // Using the reg_nr from the Product request
 

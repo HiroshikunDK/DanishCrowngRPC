@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2cdef73-d106-404e-a9e6-291c20ece0aa" name="Changes" comment="inital Commit" />
+    <list default="true" id="c2cdef73-d106-404e-a9e6-291c20ece0aa" name="Changes" comment="workspace">
+      <change afterPath="$PROJECT_DIR$/src/SQLlite/DanishCrownDB.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/DatabaseConnectionLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/TrackingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/TrackingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/DatabaseConnection.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +27,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "HiroshikunDK"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HiroshikunDK&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -33,6 +40,9 @@
         <option name="url" value="https://github.com/HiroshikunDK/DanishCrowngRPC.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.7.4/postgresql-42.7.4.jar!/org/postgresql/core/v3/QueryExecutorImpl.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -49,7 +59,10 @@
     "Application.Main.executor": "Run",
     "Maven.DanishCrowngRPC [clean].executor": "Run",
     "Maven.DanishCrowngRPC [compile].executor": "Run",
+    "Maven.DanishCrowngRPC [deploy].executor": "Run",
     "Maven.DanishCrowngRPC [install].executor": "Run",
+    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
     "Maven.DanishCrowngRPC [test].executor": "Run",
     "Maven.DanishCrowngRPC [validate].executor": "Run",
     "Maven.DanishCrowngRPC [verify].executor": "Run",
@@ -57,12 +70,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.preview.features.used": "true",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/thoma/Documents/VIA/DanishCrowngRPC",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.24482758",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -120,6 +136,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727980931755</updated>
+      <workItem from="1729684626875" duration="14000" />
+      <workItem from="1729684650632" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="initalCommit">
       <option name="closed" value="true" />
@@ -153,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729244521353</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="workspace">
+      <option name="closed" value="true" />
+      <created>1729669335808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729669335808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initalCommit" />
     <MESSAGE value="inital Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inital Commit" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
 </project>
