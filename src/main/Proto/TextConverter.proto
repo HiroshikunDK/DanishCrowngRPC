@@ -23,6 +23,7 @@ service TrackingService {
   //assignment 2 functions
   rpc getProductsFromAnimal(Animal) returns (AniProRegistrationList) {};
   rpc getAnimalFromProduct(Product) returns (AniProRegistrationList) {};
+  rpc getAnimalFromProductRegistation(AniProRegistration) returns (AnimalList) {};
 }
 
 message Farm{

@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2cdef73-d106-404e-a9e6-291c20ece0aa" name="Changes" comment="workspace">
-      <change afterPath="$PROJECT_DIR$/src/SQLlite/DanishCrownDB.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/DatabaseConnectionLite.java" afterDir="false" />
+    <list default="true" id="c2cdef73-d106-404e-a9e6-291c20ece0aa" name="Changes" comment="GRPC is now working with new SQLite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Proto/TextConverter.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Proto/TextConverter.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/TrackingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/TrackingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/DatabaseConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,34 +50,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ConverterTestClient.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Maven.DanishCrowngRPC [clean].executor": "Run",
-    "Maven.DanishCrowngRPC [compile].executor": "Run",
-    "Maven.DanishCrowngRPC [deploy].executor": "Run",
-    "Maven.DanishCrowngRPC [install].executor": "Run",
-    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
-    "Maven.DanishCrowngRPC [test].executor": "Run",
-    "Maven.DanishCrowngRPC [validate].executor": "Run",
-    "Maven.DanishCrowngRPC [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.preview.features.used": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/thoma/Documents/VIA/DanishCrowngRPC",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.24482758",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ConverterTestClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/thoma/Documents/VIA/DanishCrowngRPC&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24482758&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\thoma\Documents\VIA\DanishCrowngRPC\src\main\Proto" />
@@ -179,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729669335808</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="GRPC is now working with new SQLite">
+      <option name="closed" value="true" />
+      <created>1729688022257</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729688022257</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +202,7 @@
     <MESSAGE value="initalCommit" />
     <MESSAGE value="inital Commit" />
     <MESSAGE value="workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
+    <MESSAGE value="GRPC is now working with new SQLite" />
+    <option name="LAST_COMMIT_MESSAGE" value="GRPC is now working with new SQLite" />
   </component>
 </project>
