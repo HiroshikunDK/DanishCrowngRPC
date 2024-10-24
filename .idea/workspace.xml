@@ -5,9 +5,151 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2cdef73-d106-404e-a9e6-291c20ece0aa" name="Changes" comment="GRPC is now working with new SQLite">
+      <change afterPath="$PROJECT_DIR$/src/test/java/InProcessServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/InProcessServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Proto/TextConverter.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Proto/TextConverter.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/TrackingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/TrackingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Service/TrackingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Service/TrackingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/AnimalServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/AnimalServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/FarmServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/FarmServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/PackageServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/PackageServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/ProductServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/ProductServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/StationServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/StationServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/StoreServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/StoreServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TextConverterGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TextConverterGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TrackingServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TrackingServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TrayServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TrayServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AniProRegistrationOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AnimalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AnimalList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AnimalListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AnimalListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AnimalOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/AnimalOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/DanishCrownServiceProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/DanishCrownServiceProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Farm.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Farm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/FarmList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/FarmList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/FarmListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/FarmListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/FarmOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/FarmOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Package.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/PackageList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/PackageList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/PackageListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/PackageListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/PackageOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/PackageOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProTrayRegistrationOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProductList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProductListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProductListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProductOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ProductOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/RequestText.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/RequestText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/RequestTextOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/RequestTextOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ResponseText.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ResponseText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ResponseTextOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/ResponseTextOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StationListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StationListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StationOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StationOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StoreList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StoreList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StoreListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StoreListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StoreOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/StoreOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Tray.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/Tray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationListOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationListOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/via/pro3/grpcspringbootexample/grpc/TrayStaRegistrationOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/any.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/any.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/api.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/api.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/descriptor.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/descriptor.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/duration.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/duration.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/empty.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/empty.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/field_mask.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/field_mask.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/source_context.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/source_context.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/struct.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/struct.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/timestamp.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/timestamp.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/type.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/type.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/wrappers.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/9068691fe5c0f89a75807fcbde90b5a2/google/protobuf/wrappers.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/binlog/v1/binarylog.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/binlog/v1/binarylog.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/channelz/v1/channelz.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/channelz/v1/channelz.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/health/v1/health.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/health/v1/health.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/reflection/v1alpha/reflection.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/cfc82b302f215034b05b3d7836734b35/grpc/reflection/v1alpha/reflection.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/annotations.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/annotations.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/auth.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/auth.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/backend.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/backend.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/billing.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/billing.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/client.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/client.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/config_change.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/config_change.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/consumer.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/consumer.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/context.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/context.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/control.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/control.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/distribution.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/distribution.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/documentation.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/documentation.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/endpoint.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/endpoint.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/error_reason.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/error_reason.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/field_behavior.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/field_behavior.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/field_info.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/field_info.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/http.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/http.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/httpbody.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/httpbody.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/label.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/label.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/launch_stage.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/launch_stage.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/log.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/log.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/logging.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/logging.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/metric.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/metric.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/monitored_resource.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/monitored_resource.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/monitoring.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/monitoring.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/policy.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/policy.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/quota.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/quota.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/resource.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/resource.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/routing.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/routing.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/service.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/source_info.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/source_info.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/system_parameter.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/system_parameter.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/usage.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/usage.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/visibility.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/api/visibility.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/cloud/audit/audit_log.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/cloud/audit/audit_log.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/cloud/extended_operations.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/cloud/extended_operations.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/cloud/location/locations.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/cloud/location/locations.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/geo/type/viewport.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/geo/type/viewport.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/logging/type/http_request.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/logging/type/http_request.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/logging/type/log_severity.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/logging/type/log_severity.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/longrunning/operations.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/longrunning/operations.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/code.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/code.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/context/attribute_context.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/context/attribute_context.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/context/audit_context.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/context/audit_context.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/error_details.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/error_details.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/status.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/rpc/status.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/calendar_period.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/calendar_period.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/color.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/color.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/date.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/date.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/datetime.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/datetime.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/dayofweek.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/dayofweek.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/decimal.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/decimal.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/expr.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/expr.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/fraction.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/fraction.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/interval.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/interval.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/latlng.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/latlng.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/localized_text.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/localized_text.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/money.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/money.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/month.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/month.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/phone_number.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/phone_number.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/postal_address.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/postal_address.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/quaternion.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/quaternion.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/timeofday.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/protoc-dependencies/daa10abb282ccd59e9dbcb6387f9fa97/google/type/timeofday.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,34 +192,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ConverterTestClient.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DanishCrowngRPC [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/thoma/Documents/VIA/DanishCrowngRPC&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.24482758&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConverterTestClient.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Maven.DanishCrowngRPC [clean].executor": "Run",
+    "Maven.DanishCrowngRPC [compile].executor": "Run",
+    "Maven.DanishCrowngRPC [deploy].executor": "Run",
+    "Maven.DanishCrowngRPC [install].executor": "Run",
+    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
+    "Maven.DanishCrowngRPC [test].executor": "Run",
+    "Maven.DanishCrowngRPC [validate].executor": "Run",
+    "Maven.DanishCrowngRPC [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/thoma/Documents/VIA_fag/SW_PRO3-A24/DanishCrowngRPC",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24482758",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\thoma\Documents\VIA\DanishCrowngRPC\src\main\Proto" />
@@ -89,7 +231,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="ConverterTestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Client.ConverterTestClient" />
       <module name="DanishCrowngRPC" />
@@ -106,7 +248,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DanishCrowngRPC" />
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
