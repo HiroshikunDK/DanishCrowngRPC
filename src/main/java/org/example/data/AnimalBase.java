@@ -1,18 +1,17 @@
-package org.example.data.Persistence;
+package org.example.data;
 
 import org.example.Model.Animal;
+import org.example.data.Persistence.Persistence;
 import org.springframework.stereotype.Component;
-import via.pro3.grpcspringbootexample.grpc.Farm;
 
 import java.sql.SQLException;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 @Component
 public class AnimalBase implements AnimalRegistrationSystem {
-    private final Map<String, Animal> carsCache = new HashMap<>();
+    private final Map<String, Animal> AnimalCache = new HashMap<>();
     private final Persistence persistence;
 
     public AnimalBase(Persistence persistence) {
@@ -51,14 +50,15 @@ public class AnimalBase implements AnimalRegistrationSystem {
     //Todo: implement this!
     @Override
     public List<Animal> getAnimalsByDate(String date) throws SQLException {
-        return null;
+        return persistence.getAllAnimalsByDate(date).stream().toList();
     }
 
     @Override
-    public List<Animal> getAnimalsByOrigin(Farm farm) throws SQLException {
-        return null;
+    public List<Animal> getAnimalsByOrigin(String farmID) throws SQLException {
+        return persistence.getAllAnimalsByFarm(farmID).stream().toList();
     }
 
+    /*
     @Override
     public List<String> getFarmsInSystemByDate(String date) throws SQLException {
         return null;
@@ -68,4 +68,6 @@ public class AnimalBase implements AnimalRegistrationSystem {
     public List<String> getDatesInSystemByFarm(String date) throws SQLException {
         return null;
     }
+    */
+
 }

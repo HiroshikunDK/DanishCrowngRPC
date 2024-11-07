@@ -14,7 +14,7 @@ import java.util.Collection;
 public class AnimalDAO implements Persistence {
     private final DatabaseHelper<Animal> helper;
 
-    public AnimalDAO(DatabaseHelper<org.example.Model.Animal> helper) {
+    public AnimalDAO(DatabaseHelper<Animal> helper) {
         this.helper = helper;
     }
 
@@ -52,6 +52,7 @@ public class AnimalDAO implements Persistence {
 
     }
 
+    @Override
     public Animal create(Animal animal) throws SQLException {
         try {
             helper.executeUpdate("INSERT INTO animal VALUES (?, ?, ?, ?, ?, ?, ?, ?)", animal.getId(),  animal.getReg_nr(), animal.getName(), animal.getSpecies(), animal.getSub_species(), animal.getBirthday(), animal.getWeight(), animal.getFarm_reg_nr());
@@ -61,6 +62,7 @@ public class AnimalDAO implements Persistence {
         }
     }
 
+    @Override
     public Collection<Animal> readAll() throws SQLException {
         try {
             return helper.map(this::createAnimal, "SELECT * FROM animal");
@@ -81,6 +83,7 @@ public class AnimalDAO implements Persistence {
         }
     }
 
+    @Override
     public void delete(String id) throws IllegalArgumentException {
         try {
             helper.executeUpdate("DELETE FROM animal WHERE id = ?", id);
@@ -91,6 +94,7 @@ public class AnimalDAO implements Persistence {
 
     //TODO: Should be replaced with at DAO object for AniProRegistration table
     //Date signature on sql yyyy-MM-dd
+    @Override
     public Collection<Animal> getAllAnimalsByDate(String date) throws SQLException {
         try {
             return helper.map(this::createAnimal, "SELECT * FROM animal WHERE reg_nr IN(SELECT animal_reg_nr FROM AniProRegistration WHERE production_date = ? AND product_reg_nr = 9999)");
@@ -101,6 +105,7 @@ public class AnimalDAO implements Persistence {
 
     //TODO: Should be replaced with at DAO object for Farm table
     //Date signature on sql yyyy-MM-dd
+    @Override
     public Collection<Animal> getAllAnimalsByFarm(String farmID) throws SQLException {
         try {
             return helper.map(this::createAnimal, "SELECT * FROM animal WHERE farm_reg_nr = ?",farmID);

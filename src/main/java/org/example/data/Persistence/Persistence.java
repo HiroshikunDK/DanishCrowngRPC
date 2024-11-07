@@ -13,4 +13,6 @@ public interface Persistence {
     void update(Animal animal) throws SQLException;
     void delete(String registrationNumber) throws SQLException;
     Animal read(String registrationNumber) throws SQLException;
+    Collection<Animal> getAllAnimalsByDate(String date) throws SQLException;
+    Collection<Animal> getAllAnimalsByFarm(String farmID) throws SQLException;
 }
