@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2cdef73-d106-404e-a9e6-291c20ece0aa" name="Changes" comment="Added Test Cases to GRPC calls">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/LoadDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalRegistrationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalRegistrationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/AnimalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/LoadDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/LoadDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +103,7 @@
       <module name="DanishCrowngRPC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.ServerREST.*" />
+          <option name="PATTERN" value="org.example.Service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,7 +136,7 @@
       <module name="DanishCrowngRPC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.data.*" />
+          <option name="PATTERN" value="org.example.ServerREST.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,7 +255,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalApplication.java</url>
-          <line>11</line>
+          <line>12</line>
           <properties class="org.example.ServerREST.AnimalApplication" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

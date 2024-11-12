@@ -1,6 +1,7 @@
-package org.example.data;
+package org.example.ServerREST;
 
 import org.example.Model.Animal;
+import org.example.data.AnimalRegistrationSystem;
 import org.example.data.Persistence.Persistence;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class AnimalBase /*implements AnimalRegistrationSystem*/ {
+public abstract class AnimalBase implements AnimalRegistrationSystem {
     private final Map<String, Animal> AnimalCache = new HashMap<>();
     private final Persistence persistence;
 
@@ -21,42 +22,42 @@ public class AnimalBase /*implements AnimalRegistrationSystem*/ {
         this.persistence = persistence;
     }
 
-    //@Override
+    @Override
     public Animal registerAnimal(int id, int reg_nr, String name, String species,String sub_species,String birthday,float weight,int farm_reg_nr) throws SQLException {
         return persistence.create(id,  reg_nr, name, species, sub_species, birthday, weight, farm_reg_nr);
 
     }
-    //@Override
+    @Override
     public Animal registerAnimal(Animal animal) throws SQLException {
         return persistence.create(animal);
     }
 
-    //@Override
+    @Override
     public Animal getAnimal(String id) throws SQLException {
         return persistence.read(id);
     }
 
-    //@Override
+    @Override
     public List<Animal> getAllAnimals() throws SQLException {
         return persistence.readAll().stream().toList();
     }
 
-    //@Override
+    @Override
     public void updateAnimal(Animal animal) throws SQLException {
         persistence.update(animal);
     }
 
-    //@Override
+    @Override
     public void removeAnimal(String id) throws SQLException {
         persistence.delete(id);
     }
     //Todo: implement this!
-    //@Override
+    @Override
     public List<Animal> getAnimalsByDate(String date) throws SQLException {
         return persistence.getAllAnimalsByDate(date).stream().toList();
     }
 
-    //@Override
+    @Override
     public List<Animal> getAnimalsByOrigin(String farmID) throws SQLException {
         return persistence.getAllAnimalsByFarm(farmID).stream().toList();
     }

@@ -1,4 +1,4 @@
-package org.example.ServerREST;
+package org.example.Service;
 
 import org.example.Model.Animal;
 import org.example.data.AnimalRegistrationSystem;
