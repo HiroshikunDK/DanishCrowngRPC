@@ -26,7 +26,6 @@
             <version>1.63.0</version>
         </dependency>
 
-
             <!-- https://mvnrepository.com/artifact/ch.qos.logback.access/common -->
             <dependency>
                 <groupId>ch.qos.logback.access</groupId>
@@ -124,6 +123,17 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
         <dependency>
             <groupId>org.xerial</groupId>
@@ -184,8 +194,16 @@
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-
-
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>3.1.0</version>
+        </dependency>
 
 
     </dependencies>
@@ -209,10 +227,12 @@
                 <artifactId>protobuf-maven-plugin</artifactId>
                 <version>0.6.1</version>
                 <configuration>
+                    <!--suppress UnresolvedMavenProperty -->
                     <protocArtifact>
                         com.google.protobuf:protoc:3.3.0:exe:${os.detected.classifier}
                     </protocArtifact>
                     <pluginId>grpc-java</pluginId>
+                    <!--suppress UnresolvedMavenProperty -->
                     <pluginArtifact>
                         io.grpc:protoc-gen-grpc-java:1.4.0:exe:${os.detected.classifier}
                     </pluginArtifact>

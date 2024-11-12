@@ -1,6 +1,13 @@
 package org.example.Model;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="animal")
 public class Animal {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private final int id;
     private final int reg_nr;
     private final String name;

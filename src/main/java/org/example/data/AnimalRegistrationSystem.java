@@ -1,12 +1,13 @@
 package org.example.data;
 
 import org.example.Model.Animal;
+import org.springframework.data.jpa.repository.JpaRepository;
 import via.pro3.grpcspringbootexample.grpc.Farm;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public interface AnimalRegistrationSystem {
+public interface AnimalRegistrationSystem extends JpaRepository<Animal, Long> {
     Animal registerAnimal(int id, int reg_nr, String name, String species, String sub_species, String birthday, float weight, int farm_reg_nr) throws SQLException;
     Animal registerAnimal(Animal animal) throws SQLException;
     Animal getAnimal(String animalID) throws SQLException;

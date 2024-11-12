@@ -1,71 +1,55 @@
 package org.example.ServerREST;
 
-import org.springframework.web.bind.annotation.*;
 import org.example.Model.Animal;
 import org.example.data.AnimalRegistrationSystem;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 import java.util.List;
-@RestController
-@RequestMapping("/animals")
-public class AnimalService {
-    private final AnimalRegistrationSystem sales;
 
+@Service
+public class AnimalService /*implements AnimalRegistrationSystem*/ {
 
-    public AnimalService(AnimalRegistrationSystem sales) {
-        this.sales = sales;
+    @Autowired
+    public AnimalService(){}
+    //@Override
+    public Animal registerAnimal(int id, int reg_nr, String name, String species, String sub_species, String birthday, float weight, int farm_reg_nr) throws SQLException {
+        return null;
     }
 
-    /*
-    @ExceptionHandler
-    public ResponseEntity<String> handleNoSuchElementFoundException (DuplicateKeyException exception) {
-        return ResponseEntity.status(HttpStatus.CONFLICT).body(exception.getMessage());
+    //@Override
+    public Animal registerAnimal(Animal animal) throws SQLException {
+        return null;
     }
 
-    @ExceptionHandler
-    public ResponseEntity<String> handleNoSuchElementFoundException (NotFoundException exception) {
-        return ResponseEntity.status(HttpStatus.CONFLICT).body(exception.getMessage());
+    //@Override
+    public Animal getAnimal(String animalID) throws SQLException {
+        return null;
     }
 
-    @ExceptionHandler
-    public ResponseEntity<String> handleNoSuchElementFoundException (ValidationException exception) {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMessage());
-    }
-*/
-    @PostMapping
-    public Animal registerAnimal(@RequestBody Animal animal) throws SQLException {
-        return sales.registerAnimal(animal.getId(), animal.getReg_nr(), animal.getName(), animal.getSpecies(), animal.getSub_species(), animal.getBirthday(), animal.getWeight(), animal.getFarm_reg_nr());
+    //@Override
+    public List<Animal> getAllAnimals() throws SQLException {
+        return null;
     }
 
-    @GetMapping("/{animalID}")
-    public Animal getAnimal(@PathVariable("animalID") String animalID) throws SQLException {
-        return sales.getAnimal(animalID);
+    //@Override
+    public void updateAnimal(Animal animal) throws SQLException {
+
     }
 
-    @GetMapping
-    public List<Animal> getAllCars() throws SQLException {
-        return sales.getAllAnimals();
+    //@Override
+    public void removeAnimal(String animalID) throws SQLException {
+
     }
 
-    @PutMapping("/{animalID}")
-    public void updateCar(@PathVariable("animalID") String animalID, @RequestBody Animal animal) throws SQLException {
-        if (!animalID.equals(animal.getId())) {
-            throw new IllegalArgumentException("License number does not match");
-        }
-        sales.updateAnimal(animal);
+    //@Override
+    public List<Animal> getAnimalsByDate(String date) throws SQLException {
+        return null;
     }
 
-    @DeleteMapping("/{animalID}")
-    public void deleteCar(@PathVariable("animalID") String animalID) throws SQLException {
-        sales.removeAnimal(animalID);
-    }
-
-    @RequestMapping("/animalListByDate")
-    public List<Animal> getAnimalByProductionDate(@PathVariable("productionDate") String productionDate) throws SQLException{
-        return sales.getAnimalsByDate(productionDate);
-    }
-    @RequestMapping("/animalListByFarm")
-    public List<Animal> getAnimalByProductionFarm(@PathVariable("productionDate") String productionDate) throws SQLException{
-        return sales.getAnimalsByDate(productionDate);
+    //@Override
+    public List<Animal> getAnimalsByOrigin(String farmid) throws SQLException {
+        return null;
     }
 }

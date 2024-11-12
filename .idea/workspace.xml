@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2cdef73-d106-404e-a9e6-291c20ece0aa" name="Changes" comment="Added Test Cases to GRPC calls">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/LoadDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/SpringBootRestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/AnimalBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/AnimalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/AnimalDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/AnimalRegistrationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalRegistrationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/Persistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Persistence/Persistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalRegistrationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/AnimalRegistrationSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/InProcessServer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/InProcessServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/InProcessServerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,36 +61,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnimalApplication.executor": "Debug",
-    "Application.ConverterTestClient.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Maven.DanishCrowngRPC [clean].executor": "Run",
-    "Maven.DanishCrowngRPC [compile].executor": "Run",
-    "Maven.DanishCrowngRPC [deploy].executor": "Run",
-    "Maven.DanishCrowngRPC [install].executor": "Run",
-    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
-    "Maven.DanishCrowngRPC [test].executor": "Run",
-    "Maven.DanishCrowngRPC [validate].executor": "Run",
-    "Maven.DanishCrowngRPC [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.preview.features.used": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/thoma/Documents/VIA/DanishCrowngRPC",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.24482758",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnimalApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConverterTestClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DanishCrowngRPC [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/thoma/Documents/VIA/_SEP3/VIA-SEP3-GRP3-Biludljening/Car Rental Service/Microservices&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24482758&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.data.Persistence" />
@@ -267,9 +261,13 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/ServerREST/AnimalApplication.java</url>
-          <line>9</line>
+          <line>11</line>
+          <properties class="org.example.ServerREST.AnimalApplication" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
