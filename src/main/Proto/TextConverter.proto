@@ -26,6 +26,19 @@ service TrackingService {
   rpc getAnimalFromProductRegistation(AniProRegistration) returns (AnimalList) {};
 }
 
+service ProductShippingService {
+  //assignment 2 functions
+  rpc createPackage(AniProRegistration) returns (statusMessage) {};
+  rpc addProductToPackage(ProductInPackage) returns (statusMessage) {};
+  rpc getPackagesFromAnimal(Animal) returns (PackageList) {};
+  rpc getPackagesFromProduct(Product) returns (PackageList) {};
+}
+
+message statusMessage{
+  bool success=1;
+  string message=2;
+}
+
 message Farm{
   int64 id=1;
   string FarmName=2;
@@ -207,16 +220,20 @@ service StationService {
   rpc delete(google.protobuf.Int64Value) returns (google.protobuf.BoolValue) {};
 }
 
-
 message Package {
   int32 id = 1; // DC_ID
-  int32 batch_nr = 2; // DC_ID
+  int32 package_nr = 2; // DC_ID
   string name = 3; // DC_Name
   string description = 4; // Description
   float weight = 5; // Weight
   string production_date = 6; // DATE (kan også være en Timestamp)
   string expiration_date = 7; // DATE (kan også være en Timestamp)
   int32 product_nr = 8; // DC_ID
+}
+
+message ProductInPackage {
+  int32 productID = 1; // Product tables column reg_nr
+  int32 package_nr = 2; // Package tables column package_nr
 }
 
 message PackageList {

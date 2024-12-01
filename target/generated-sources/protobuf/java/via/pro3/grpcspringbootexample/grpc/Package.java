@@ -16,7 +16,7 @@ public  final class Package extends
   }
   private Package() {
     id_ = 0;
-    batchNr_ = 0;
+    packageNr_ = 0;
     name_ = "";
     description_ = "";
     weight_ = 0F;
@@ -57,7 +57,7 @@ public  final class Package extends
           }
           case 16: {
 
-            batchNr_ = input.readInt32();
+            packageNr_ = input.readInt32();
             break;
           }
           case 26: {
@@ -130,17 +130,17 @@ public  final class Package extends
     return id_;
   }
 
-  public static final int BATCH_NR_FIELD_NUMBER = 2;
-  private int batchNr_;
+  public static final int PACKAGE_NR_FIELD_NUMBER = 2;
+  private int packageNr_;
   /**
    * <pre>
    * DC_ID
    * </pre>
    *
-   * <code>int32 batch_nr = 2;</code>
+   * <code>int32 package_nr = 2;</code>
    */
-  public int getBatchNr() {
-    return batchNr_;
+  public int getPackageNr() {
+    return packageNr_;
   }
 
   public static final int NAME_FIELD_NUMBER = 3;
@@ -352,8 +352,8 @@ public  final class Package extends
     if (id_ != 0) {
       output.writeInt32(1, id_);
     }
-    if (batchNr_ != 0) {
-      output.writeInt32(2, batchNr_);
+    if (packageNr_ != 0) {
+      output.writeInt32(2, packageNr_);
     }
     if (!getNameBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, name_);
@@ -384,9 +384,9 @@ public  final class Package extends
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(1, id_);
     }
-    if (batchNr_ != 0) {
+    if (packageNr_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, batchNr_);
+        .computeInt32Size(2, packageNr_);
     }
     if (!getNameBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, name_);
@@ -426,8 +426,8 @@ public  final class Package extends
     boolean result = true;
     result = result && (getId()
         == other.getId());
-    result = result && (getBatchNr()
-        == other.getBatchNr());
+    result = result && (getPackageNr()
+        == other.getPackageNr());
     result = result && getName()
         .equals(other.getName());
     result = result && getDescription()
@@ -454,8 +454,8 @@ public  final class Package extends
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId();
-    hash = (37 * hash) + BATCH_NR_FIELD_NUMBER;
-    hash = (53 * hash) + getBatchNr();
+    hash = (37 * hash) + PACKAGE_NR_FIELD_NUMBER;
+    hash = (53 * hash) + getPackageNr();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
@@ -600,7 +600,7 @@ public  final class Package extends
       super.clear();
       id_ = 0;
 
-      batchNr_ = 0;
+      packageNr_ = 0;
 
       name_ = "";
 
@@ -637,7 +637,7 @@ public  final class Package extends
     public via.pro3.grpcspringbootexample.grpc.Package buildPartial() {
       via.pro3.grpcspringbootexample.grpc.Package result = new via.pro3.grpcspringbootexample.grpc.Package(this);
       result.id_ = id_;
-      result.batchNr_ = batchNr_;
+      result.packageNr_ = packageNr_;
       result.name_ = name_;
       result.description_ = description_;
       result.weight_ = weight_;
@@ -688,8 +688,8 @@ public  final class Package extends
       if (other.getId() != 0) {
         setId(other.getId());
       }
-      if (other.getBatchNr() != 0) {
-        setBatchNr(other.getBatchNr());
+      if (other.getPackageNr() != 0) {
+        setPackageNr(other.getPackageNr());
       }
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
@@ -777,27 +777,27 @@ public  final class Package extends
       return this;
     }
 
-    private int batchNr_ ;
+    private int packageNr_ ;
     /**
      * <pre>
      * DC_ID
      * </pre>
      *
-     * <code>int32 batch_nr = 2;</code>
+     * <code>int32 package_nr = 2;</code>
      */
-    public int getBatchNr() {
-      return batchNr_;
+    public int getPackageNr() {
+      return packageNr_;
     }
     /**
      * <pre>
      * DC_ID
      * </pre>
      *
-     * <code>int32 batch_nr = 2;</code>
+     * <code>int32 package_nr = 2;</code>
      */
-    public Builder setBatchNr(int value) {
+    public Builder setPackageNr(int value) {
       
-      batchNr_ = value;
+      packageNr_ = value;
       onChanged();
       return this;
     }
@@ -806,11 +806,11 @@ public  final class Package extends
      * DC_ID
      * </pre>
      *
-     * <code>int32 batch_nr = 2;</code>
+     * <code>int32 package_nr = 2;</code>
      */
-    public Builder clearBatchNr() {
+    public Builder clearPackageNr() {
       
-      batchNr_ = 0;
+      packageNr_ = 0;
       onChanged();
       return this;
     }

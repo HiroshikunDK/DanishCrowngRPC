@@ -21,9 +21,9 @@ public interface PackageOrBuilder extends
    * DC_ID
    * </pre>
    *
-   * <code>int32 batch_nr = 2;</code>
+   * <code>int32 package_nr = 2;</code>
    */
-  int getBatchNr();
+  int getPackageNr();
 
   /**
    * <pre>
